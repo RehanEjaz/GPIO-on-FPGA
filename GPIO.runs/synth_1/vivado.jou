@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb 11 21:44:41 2022
+# Process ID: 27622
+# Current directory: /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1
+# Command line: vivado -log gpio_controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gpio_controller.tcl
+# Log file: /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/gpio_controller.vds
+# Journal file: /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source gpio_controller.tcl -notrace

@@ -1,0 +1,4 @@
+Running: xsim.dir/GPIO_TB_behav/xsimk -simmode gui -wdb GPIO_TB_behav.wdb -simrunnum 0 -socket 43417
+Design successfully loaded
+Design Loading Memory Usage: 32480 KB (Peak: 32536 KB)
+Design Loading CPU Usage: 20 ms

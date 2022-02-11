@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../GPIO.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../GPIO.srcs/sources_1/new/gpio_controller.sv" \
+"../../../../GPIO.srcs/sources_1/imports/lib/rev_gpio.sv" \
+"../../../../GPIO.srcs/sim_1/new/GPIO_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

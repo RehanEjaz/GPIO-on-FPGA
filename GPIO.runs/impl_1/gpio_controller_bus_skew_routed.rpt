@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri Feb 11 21:46:55 2022
+| Host         : kali running 64-bit Kali GNU/Linux Rolling
+| Command      : report_bus_skew -warn_on_violation -file gpio_controller_bus_skew_routed.rpt -pb gpio_controller_bus_skew_routed.pb -rpx gpio_controller_bus_skew_routed.rpx
+| Design       : gpio_controller
+| Device       : 7a35ti-csg324
+| Speed File   : -1L  PRODUCTION 1.22 2018-03-21
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

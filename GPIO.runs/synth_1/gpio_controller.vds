@@ -1,0 +1,625 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb 11 21:44:41 2022
+# Process ID: 27622
+# Current directory: /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1
+# Command line: vivado -log gpio_controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gpio_controller.tcl
+# Log file: /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/gpio_controller.vds
+# Journal file: /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source gpio_controller.tcl -notrace
+Command: synth_design -top gpio_controller -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27632 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1331.129 ; gain = 84.875 ; free physical = 1855 ; free virtual = 11249
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gpio_controller' [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:23]
+	Parameter GPIO_PINS bound to: 32 - type: integer 
+	Parameter PADDR_SIZE bound to: 4 - type: integer 
+	Parameter STAGES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 32.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 128.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'rev_gpio' [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/imports/lib/rev_gpio.sv:35]
+	Parameter GPIO_PINS bound to: 32 - type: integer 
+	Parameter PADDR_SIZE bound to: 4 - type: integer 
+	Parameter STAGES bound to: 2 - type: integer 
+	Parameter MODE bound to: 0 - type: integer 
+	Parameter DIRECTION bound to: 1 - type: integer 
+	Parameter OUTPUT bound to: 2 - type: integer 
+	Parameter INPUT bound to: 3 - type: integer 
+	Parameter TR_TYPE bound to: 4 - type: integer 
+	Parameter TR_LVL0 bound to: 5 - type: integer 
+	Parameter TR_LVL1 bound to: 6 - type: integer 
+	Parameter TR_STAT bound to: 7 - type: integer 
+	Parameter IRQ_EN bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rev_gpio' (6#1) [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/imports/lib/rev_gpio.sv:35]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:101]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:166]
+WARNING: [Synth 8-5788] Register paddr_reg in module gpio_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:79]
+WARNING: [Synth 8-5788] Register pwrdata_reg in module gpio_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:81]
+WARNING: [Synth 8-5788] Register pwrite_reg in module gpio_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:80]
+WARNING: [Synth 8-87] always_comb on 'nextState_reg' did not result in combinational logic [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:167]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_controller' (7#1) [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1375.754 ; gain = 129.500 ; free physical = 1850 ; free virtual = 11244
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1375.754 ; gain = 129.500 ; free physical = 1852 ; free virtual = 11247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1375.754 ; gain = 129.500 ; free physical = 1852 ; free virtual = 11247
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_gen/inst'
+Finished Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_gen/inst'
+Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_gen/inst'
+Finished Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_gen/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gpio_controller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gpio_controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gpio_controller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gpio_controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gpio_controller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gpio_controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1703.090 ; gain = 0.000 ; free physical = 1610 ; free virtual = 11004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1674 ; free virtual = 11069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1674 ; free virtual = 11069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for clk_gen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_gen/inst. (constraint file  /home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/dont_touch.xdc, line 10).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1677 ; free virtual = 11072
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "paddr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.srcs/sources_1/new/gpio_controller.sv:167]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1675 ; free virtual = 11070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 18    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   6 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   8 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gpio_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 1     
+Module rev_gpio 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 17    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   6 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'clk_cnt_reg[7]' (FDCE) to 'clk_cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'clk_cnt_reg[6]' (FDCE) to 'clk_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'clk_cnt_reg[5]' (FDCE) to 'clk_cnt_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_cnt_reg[4] )
+INFO: [Synth 8-3886] merging instance 'nextState_reg[31]' (LD) to 'nextState_reg[30]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[30]' (LD) to 'nextState_reg[29]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[29]' (LD) to 'nextState_reg[28]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[28]' (LD) to 'nextState_reg[27]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[27]' (LD) to 'nextState_reg[26]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[26]' (LD) to 'nextState_reg[25]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[25]' (LD) to 'nextState_reg[24]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[24]' (LD) to 'nextState_reg[23]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[23]' (LD) to 'nextState_reg[22]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[22]' (LD) to 'nextState_reg[21]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[21]' (LD) to 'nextState_reg[20]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[20]' (LD) to 'nextState_reg[19]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[19]' (LD) to 'nextState_reg[18]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[18]' (LD) to 'nextState_reg[17]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[17]' (LD) to 'nextState_reg[16]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[16]' (LD) to 'nextState_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[15]' (LD) to 'nextState_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[14]' (LD) to 'nextState_reg[13]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[13]' (LD) to 'nextState_reg[12]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[12]' (LD) to 'nextState_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[11]' (LD) to 'nextState_reg[10]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[10]' (LD) to 'nextState_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[9]' (LD) to 'nextState_reg[8]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[8]' (LD) to 'nextState_reg[7]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[7]' (LD) to 'nextState_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[6]' (LD) to 'nextState_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[5]' (LD) to 'nextState_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nextState_reg[4]' (LD) to 'nextState_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nextState_reg[3] )
+INFO: [Synth 8-3886] merging instance 'currState_reg[31]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[30]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[29]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[28]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[27]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[26]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[25]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[24]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[23]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[22]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[21]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[20]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[19]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[18]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[17]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[16]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[15]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[14]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[13]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[12]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[11]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[10]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[9]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[8]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[7]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[6]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[5]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'currState_reg[4]' (FDC) to 'currState_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pwrdata_reg[0]' (FDE) to 'pwrdata_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pwrdata_reg[1]' (FDE) to 'pwrdata_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pwrdata_reg[2]' (FDE) to 'pwrdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pwrdata_reg[3]' (FDE) to 'pwrdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwrdata_reg[4]' (FDE) to 'pwrdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pwrdata_reg[5]' (FDE) to 'pwrdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_direction_reg[0]' (FDCE) to 'gpio_peripheral/gpio_direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_direction_reg[1]' (FDCE) to 'gpio_peripheral/gpio_direction_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_direction_reg[2]' (FDCE) to 'gpio_peripheral/gpio_direction_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_direction_reg[3]' (FDCE) to 'gpio_peripheral/gpio_direction_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_direction_reg[4]' (FDCE) to 'gpio_peripheral/gpio_direction_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_direction_reg[5]' (FDCE) to 'gpio_peripheral/gpio_direction_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_output_reg[0]' (FDCE) to 'gpio_peripheral/gpio_output_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_mode_reg[0]' (FDCE) to 'gpio_peripheral/gpio_mode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_output_reg[1]' (FDCE) to 'gpio_peripheral/gpio_output_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_mode_reg[1]' (FDCE) to 'gpio_peripheral/gpio_mode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_output_reg[2]' (FDCE) to 'gpio_peripheral/gpio_output_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_mode_reg[2]' (FDCE) to 'gpio_peripheral/gpio_mode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_output_reg[3]' (FDCE) to 'gpio_peripheral/gpio_output_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_mode_reg[3]' (FDCE) to 'gpio_peripheral/gpio_mode_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_output_reg[4]' (FDCE) to 'gpio_peripheral/gpio_output_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_mode_reg[4]' (FDCE) to 'gpio_peripheral/gpio_mode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_output_reg[5]' (FDCE) to 'gpio_peripheral/gpio_output_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_mode_reg[5]' (FDCE) to 'gpio_peripheral/gpio_mode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_o_reg[0]' (FDR) to 'gpio_peripheral/gpio_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_o_reg[1]' (FDR) to 'gpio_peripheral/gpio_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_o_reg[2]' (FDR) to 'gpio_peripheral/gpio_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_o_reg[3]' (FDR) to 'gpio_peripheral/gpio_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_o_reg[4]' (FDR) to 'gpio_peripheral/gpio_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_o_reg[5]' (FDR) to 'gpio_peripheral/gpio_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_oe_reg[0]' (FD) to 'gpio_peripheral/gpio_oe_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_oe_reg[1]' (FD) to 'gpio_peripheral/gpio_oe_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_oe_reg[2]' (FD) to 'gpio_peripheral/gpio_oe_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_oe_reg[3]' (FD) to 'gpio_peripheral/gpio_oe_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_oe_reg[4]' (FD) to 'gpio_peripheral/gpio_oe_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gpio_peripheral/gpio_oe_reg[5]' (FD) to 'gpio_peripheral/gpio_oe_reg[6]'
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[31]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[30]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[29]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[28]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[27]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[26]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[25]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[24]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[23]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[22]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[21]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[20]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[19]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[18]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[17]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[16]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[15]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[14]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[13]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[12]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[11]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[10]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[9]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_mode_reg[8]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[31]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[30]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[29]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[28]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[27]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[26]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[25]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[24]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[23]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[22]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[21]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[20]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[19]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[18]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[17]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[16]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[15]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[14]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[13]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[12]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[11]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[10]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[9]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_direction_reg[8]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[31]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[30]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[29]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[28]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[27]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[26]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[25]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[24]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[23]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[22]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[21]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[20]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[19]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[18]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[17]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[16]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[15]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[14]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[13]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[12]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[11]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[10]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[9]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/gpio_output_reg[8]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][31]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][30]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][29]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][28]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][27]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][26]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][25]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][24]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][23]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][22]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][21]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][20]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][19]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][18]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][17]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][16]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][15]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][14]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][13]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][12]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][11]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][10]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][9]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][8]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][7]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][6]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][5]) is unused and will be removed from module gpio_controller.
+WARNING: [Synth 8-3332] Sequential element (gpio_peripheral/input_reg_stages_reg[0][4]) is unused and will be removed from module gpio_controller.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1667 ; free virtual = 11064
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1562 ; free virtual = 10959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1560 ; free virtual = 10957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |LUT1       |     2|
+|3     |LUT2       |     4|
+|4     |LUT3       |    14|
+|5     |LUT4       |     3|
+|6     |LUT5       |     2|
+|7     |LUT6       |     2|
+|8     |MMCME2_ADV |     1|
+|9     |FDCE       |    13|
+|10    |FDRE       |    11|
+|11    |LD         |     3|
+|12    |IBUF       |     2|
+|13    |OBUF       |    16|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------+------------------+------+
+|      |Instance          |Module            |Cells |
++------+------------------+------------------+------+
+|1     |top               |                  |    75|
+|2     |  clk_gen         |clk_wiz_0         |     4|
+|3     |    inst          |clk_wiz_0_clk_wiz |     4|
+|4     |  gpio_peripheral |rev_gpio          |    20|
++------+------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.090 ; gain = 456.836 ; free physical = 1565 ; free virtual = 10962
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 533 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1703.090 ; gain = 129.500 ; free physical = 1607 ; free virtual = 11004
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1703.098 ; gain = 456.836 ; free physical = 1607 ; free virtual = 11004
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+134 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 1703.098 ; gain = 468.422 ; free physical = 1580 ; free virtual = 10977
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/rehan/MERL/FPGA_EMU/GPIO/GPIO.runs/synth_1/gpio_controller.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gpio_controller_utilization_synth.rpt -pb gpio_controller_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1727.102 ; gain = 0.000 ; free physical = 1573 ; free virtual = 10970
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 11 21:45:31 2022...
